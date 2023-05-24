@@ -6,13 +6,27 @@ export const StyledWrapper = styled.div`
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5); /* Define a cor de fundo com transparência */
+  background-color: rgba(0, 0, 0, 0.5);
+`;
+
+export const InputWrapper = styled.div`
+  width: 30rem;
+
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  border: 2px solid #fff;
+
+  gap: 10px
 `;
 
 export const Input = styled.input`
-  height: 50px;
-  width: 100%;
-
+  height: 70px;
+  width: 25rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
   border-radius: 10px;
   border: 2px solid #fff;
 
@@ -27,6 +41,13 @@ export const Input = styled.input`
     border-color: #fff;
   }
 `
+
+export const EyeIcon = styled.div`
+  position: absolute;
+  top: 64%;
+  right: 15%;
+  transform: translateY(-50%);
+`;
 
 export const Button = styled.button`
   width: 300px;

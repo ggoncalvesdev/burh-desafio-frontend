@@ -9,11 +9,12 @@ function App() {
   const location = useLocation();
   // shouldShowHeader é para renderizar Header em todas as url menos "/"
   const shouldShowHeader = location.pathname !== "/";
+  const shouldShowHeaderInLogin = location.pathname !== "/login";
 
   return (
     <ThemeProvider theme={defaultTheme}>
       <GlobalStyle />
-      {shouldShowHeader && <Header />}
+      {shouldShowHeader && shouldShowHeaderInLogin && <Header />}
       <Router />
     </ThemeProvider>
   );
