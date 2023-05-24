@@ -1,5 +1,4 @@
-import { ChangeEvent, useEffect, useState } from "react";
-import { Api } from "../../services/api/Api";
+import { ChangeEvent, useState } from "react";
 import {
   RegisterUser,
   postUser,
@@ -10,7 +9,6 @@ export const Register = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [listWish, setListWish] = useState([]);
 
   function handleCreate() {
     let data: RegisterUser = {
@@ -24,32 +22,10 @@ export const Register = () => {
         /*           navigation.navigate("Home"); */
       })
       .catch((err) => {
-        alert(" Este e-mail já está em uso, verique-o ou recupere sua senha");
         console.log(err);
       });
   }
-
-  useEffect(() => {
-    loadList();
-  }, []);
-
-  const loadList = async () => {
-    try {
-      await Api.post("/list", {
-        name: name,
-        email: email,
-        password: password,
-      }).then((resp) => {
-        setListWish(resp.data);
-      });
-    } catch (e) {
-      console.error("Erro ao recuperar os dados do servidor.", e);
-      alert(
-        "Erro ao recuperar os dados do servidor, por favor, tente mais tarde."
-      );
-    }
-  };
-
+  
   return (
     <StyledWrapper>
       <Input
