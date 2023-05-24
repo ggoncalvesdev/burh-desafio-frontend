@@ -1,13 +1,13 @@
 import { Route, Routes } from "react-router";
-import { BrowserRouter } from "react-router-dom";
 import { Home } from "../pages/Home";
+import { Register } from "../pages/Register";
 
 export const Router = () => {
   return (
-    <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Register />} />
+        <Route path="/Home" element={<Home />} />
+        <Route path="/Visializar" element={<Home />} />
       </Routes>
-    </BrowserRouter>
   );
 };
