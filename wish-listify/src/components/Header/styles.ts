@@ -17,7 +17,7 @@ export const HeaderContainer = styled.header`
   left: 0;
   width: 100vw;
   font-size: 0.65rem;
-  padding: 12px 24px;
+  padding: 18px 24px;
   display: flex;
   align-items: center;
   justify-content: center;

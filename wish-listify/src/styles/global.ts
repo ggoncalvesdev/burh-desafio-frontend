@@ -37,6 +37,10 @@ button{
   cursor: pointer;
 }
 
+li{
+  list-style: none;
+}
+
 @media (max-width: 768px) {
   html {
     font-size: 87.5%;
