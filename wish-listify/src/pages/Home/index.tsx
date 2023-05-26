@@ -5,6 +5,7 @@ import { GridContainer, Title } from "./styles";
 
 
 export const Home = () => {
+  //Mock 
   const userWishLists: ListProps[] = [
     {
       type: "Curto Prazo",
