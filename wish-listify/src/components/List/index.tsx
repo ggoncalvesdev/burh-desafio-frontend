@@ -14,9 +14,11 @@ export const List = ({ type, title, wishes }: ListProps) => {
   const maxDisplayedWishes = 5;
   const displayedWishes = wishes.slice(0, maxDisplayedWishes);
   const navigate: NavigateFunction = useNavigate()
+
   const handleCardClick = () => {
     navigate("Visualizar")
   };
+
   return (
     <Button onClick={handleCardClick}>
       <Card type={type}>
@@ -26,7 +28,6 @@ export const List = ({ type, title, wishes }: ListProps) => {
           {displayedWishes.map((wish, index) => (
             <Desire key={index}>
               <DesireName>- {wish.name}</DesireName>
-              {/*             <DesireDescription>{wish.description}</DesireDescription> */}
             </Desire>
           ))}
         </ContainerDesire>
