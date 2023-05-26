@@ -11,7 +11,7 @@ Durante o desenvolvimento da aplicação Lista de Desejos, foram tomadas algumas
 
 * Responsividade: A aplicação foi projetada para ser responsiva, adaptando-se a diferentes tamanhos de tela e dispositivos. Foram utilizadas técnicas de design responsivo e media queries para garantir uma experiência de usuário consistente em diferentes plataformas.
 
-## Importante: Não consegui terminar a aplicação porque a API expirou, e não sabia que ela tinha limites de tempo. Eu só conseguia trabalhar na aplicação após as 18h30 e tinha planejado terminá-la no sábado. Portanto, a aplicação está incompleta. Peço desculpas por não ter prestado atenção ao tempo. Caso precise de mais esclarecimentos, estou à disposição para conversar!
+### Importante: Não consegui terminar a aplicação porque a API expirou, e não sabia que ela tinha limites de tempo. Eu só conseguia trabalhar na aplicação após as 18h30 e tinha planejado terminá-la no sábado. Portanto, a aplicação está incompleta. Peço desculpas por não ter prestado atenção ao tempo. Caso precise de mais esclarecimentos, estou à disposição para conversar!
 
 # Tools
 * [Axios](https://www.npmjs.com/package/axios/v/0.27.2) for integration with the api.
