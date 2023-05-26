@@ -1,8 +1,8 @@
-import { ChangeEvent, useEffect, useState } from "react";
+import { ChangeEvent, useState } from "react";
 import { NavigateFunction, useNavigate } from 'react-router-dom';
 
+import CryptoJS from 'crypto-js';
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
-import CryptoJS from 'crypto-js'
 import { Button, EyeIcon, Input, InputWrapper, StyledWrapper } from "./styles";
 const encryptionKey = 'minha-chave-secreta'
 
@@ -31,20 +31,6 @@ export const Login = () => {
     const decryptedPassword = decryptedBytes.toString(CryptoJS.enc.Utf8);
     return decryptedPassword;
   }
-
-
-
-/*   useEffect(() => {
-
-    if (storedEmail && storedPassword) {
-      setEmail(storedEmail)
-      const decryptedPassword = CryptoJS.AES.decrypt(
-        storedPassword,
-        encryptionKey,
-      ).toString(CryptoJS.enc.Utf8)
-      setPassword(decryptedPassword)
-    }
-  }, []) */
 
   function handleEmailChange(event: ChangeEvent<HTMLInputElement>) {
     const enteredEmail = event.target.value;

@@ -1,10 +1,5 @@
 import styled from 'styled-components'
 
-export const ContentContainer = styled.main`
-  min-width: 100%;
-  min-height: 100vh;
-  background-color: ${(props) => props.theme['gray-800']};
-`
 export const GridContainer = styled.div`
   max-width: 1080px;
   margin: auto;

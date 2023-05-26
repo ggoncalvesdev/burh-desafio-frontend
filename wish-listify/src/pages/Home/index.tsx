@@ -1,10 +1,7 @@
-import { ThemeProvider } from "styled-components";
-import { GlobalStyle } from "../../styles/global";
-import { defaultTheme } from "../../styles/themes/default";
-
-import { ContentContainer, GridContainer, Title } from "./styles";
+import { DefaultBody } from "../../components/DefaultBody";
 import { List } from "../../components/List";
-import { ListProps, ListWishes } from "../../model/ListProps";
+import { ListProps } from "../../model/ListProps";
+import { GridContainer, Title } from "./styles";
 
 
 export const Home = () => {
@@ -110,9 +107,7 @@ export const Home = () => {
   ];
 
   return (
-    <ThemeProvider theme={defaultTheme}>
-      <GlobalStyle />
-      <ContentContainer>
+      <DefaultBody>
         <Title>Minhas Listas de Desejos</Title>
         <GridContainer>
           {userWishLists.map((wishList, index) => (
@@ -124,7 +119,6 @@ export const Home = () => {
             />
           ))}
         </GridContainer>
-      </ContentContainer>
-    </ThemeProvider>
+        </DefaultBody>
   );
 };
